@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Daniel E. Peterson builds resilient e-commerce platforms, leads web architecture, and ships modern product experiences."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Daniel E. Peterson | Web Software Architect & Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,200..500;1,14..32,200..900&family=Jersey+25&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body data-page="home">
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="container">
+          <a
+            class="brand"
+            href="index.html"
+            aria-label="Daniel E. Peterson home"
+          >
+            <span class="brand-mark"
+              ><span class="brand-initials">DP</span></span
+            >
+            <span class="brand-copy">
+              <strong>Daniel E. Peterson</strong>
+              <span>Web Software Architect &amp; Engineer</span>
+            </span>
+          </a>
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+          >
+            Menu
+          </button>
+          <nav class="site-nav" id="site-nav" aria-label="Primary"></nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              <p class="eyebrow">
+                Enterprise Commerce • Architecture • Delivery
+              </p>
+              <h1>
+                Designing durable systems that help teams ship with confidence.
+              </h1>
+              <p class="lede" id="hero-summary"></p>
+              <div class="hero-actions" id="hero-actions"></div>
+            </div>
+            <aside class="hero-panel">
+              <p class="panel-label">Current Focus</p>
+              <h2 id="current-role"></h2>
+              <p id="current-company"></p>
+              <ul class="inline-list" id="focus-areas"></ul>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Snapshot</p>
+              <h2>What I bring to a product team</h2>
+            </div>
+            <div class="card-grid" id="highlights-grid"></div>
+          </div>
+        </section>
+
+        <section class="section section-alt">
+          <div class="container split-grid">
+            <div>
+              <p class="eyebrow">How I Work</p>
+              <h2>Strong systems, calm delivery, practical collaboration.</h2>
+              <p>
+                I care about architecture that ages well, interfaces that stay
+                understandable, and delivery habits that help teams move quickly
+                without burning trust.
+              </p>
+            </div>
+            <div class="stack-list" id="principles-list"></div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Explore</p>
+              <h2>Dive a little deeper</h2>
+            </div>
+            <div class="card-grid card-grid-compact" id="page-links"></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-content">
+          <p>
+            <span id="footer-name"></span>
+            <span id="footer-tagline"></span>
+          </p>
+          <p class="footer-meta">
+            Made with semantic HTML, modern CSS, and ES modules. No build system
+            needed here.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
