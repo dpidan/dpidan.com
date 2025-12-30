@@ -11,7 +11,7 @@
   --accent: #28529c;
   --accent-strong: #135385;
   --charcoal: #42505c;
-  --charcoal-reversed: #c6c8ca;
+  --charcoal-reversed: #d3d4d6;
   --shadow: 0 18px 40px rgba(31, 41, 51, 0.08);
   --radius: 1rem;
   --radius-sm: 0.75rem;
@@ -555,6 +555,43 @@ main {
 
 .timeline-points li + li {
   margin-top: 0.55rem;
+}
+
+.timeline-technologies {
+  margin-top: 1rem;
+}
+
+.timeline-technologies-label {
+  margin: 0 0 0.35rem;
+  color: var(--text-soft);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.timeline-technologies-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--text-soft);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.timeline-technologies-list li {
+  display: inline;
+}
+
+.timeline-technologies-list li:hover {
+  background: var(--charcoal-reversed);
+  border-radius: 3px;
+}
+
+.timeline-technologies-list li::after {
+  content: ", ";
+}
+
+.timeline-technologies-list li:last-child::after {
+  content: "";
 }
 
 .skill-cloud {

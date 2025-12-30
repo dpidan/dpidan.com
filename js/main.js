@@ -1,4 +1,4 @@
-import { siteData } from "./content.js";
+import { siteData } from "./content.js?ts=1767055940000";
 
 const page = document.body.dataset.page;
 
@@ -222,6 +222,22 @@ function renderProfile() {
             list.append(el("li", { text: point }));
           });
           article.append(list);
+        }
+
+        if (item.technologies && item.technologies.length > 0) {
+          const technologies = el("section", { className: "timeline-technologies" });
+          const label = el("h4", {
+            className: "timeline-technologies-label",
+            text: "Technologies used:",
+          });
+          const list = el("ul", { className: "timeline-technologies-list" });
+
+          item.technologies.forEach((technology) => {
+            list.append(el("li", { text: technology }));
+          });
+
+          technologies.append(label, list);
+          article.append(technologies);
         }
 
         return article;
